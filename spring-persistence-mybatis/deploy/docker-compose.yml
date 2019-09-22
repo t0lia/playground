@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+  postgres-container:
+    image: postgres:11.5
+    environment:
+      - POSTGRES_USER=bigtheta
+      - POSTGRES_PASSWORD=bigtheta
+      - POSTGRES_DB=bigtheta
+    ports:
+      - 5432:5432
